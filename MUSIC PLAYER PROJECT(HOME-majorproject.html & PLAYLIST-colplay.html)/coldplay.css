@@ -1,0 +1,1172 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.863);
+}
+
+
+/*MAIN HEADER */
+
+.main-header {
+    width: 100%;
+    display: flex;
+    height: 100px;
+    background-size: contain;
+    background-position: center;
+    transition: all 4s ease-in-out;
+    position: sticky;
+}
+
+.logo {
+    width: 130px;
+    height: 95px;
+    border-radius: 5%;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 60px;
+}
+
+.heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+    color: white;
+    position: sticky;
+}
+
+
+/*Home,favourites,browse,discover tags*/
+
+.favourites {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+
+.favourites:hover {
+    color: #c73535;
+}
+
+
+/*Search Bar*/
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin-left: 75px;
+}
+
+.in-div {
+    width: 401px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 2px;
+    background-color: #c73535;
+}
+
+.search-bar input {
+    width: 351px;
+    height: 28px;
+    color: black;
+    font-size: 1rem;
+    padding: 5px;
+    outline: none;
+    border-style: none;
+    border: 1px sloid black;
+    margin-right: 0px;
+}
+
+.search-button {
+    width: 33px;
+    height: 35px;
+    margin: 0px;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000013_1549319004_search-icon.png);
+    background-color: #ea1e1e00;
+    background-size: cover;
+    vertical-align: middle;
+    border-style: none;
+    padding: 2px;
+    margin-top: 0px;
+}
+
+.bell-button {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    border-style: none;
+    background-image: url(bell.jpg);
+    background-size: contain;
+    border-radius: 50px;
+}
+
+.profile-logo {
+    width: 50px;
+    height: 50px;
+    margin: 20px 10px 20px 45px;
+    border-radius: 50%;
+}
+
+
+/*Menu of home and favourites tag after certain breakpoints*/
+
+#menu {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#menu-list {
+    width: 200px;
+    height: 130px;
+    background: white;
+    margin-top: 25px;
+    display: none;
+    overflow: hidden;
+    background: #c73535;
+}
+
+#menu-list a {
+    display: block;
+    font-family: monospace;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#menu-list a:hover {
+    background: #0dd8df;
+}
+
+#menu-list:target {
+    display: block;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*MEDIA QUERIES OF HEADER */
+
+@media screen and (min-width:1460px) {
+    #menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1450px) {
+    .bell-button {
+        display: none;
+    }
+    .profile-logo {
+        display: block;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:1320px) {
+    .bell-button {
+        display: none;
+    }
+    .profile-logo {
+        margin-left: 50px;
+    }
+    .search-bar {
+        display: none;
+        width: 350px;
+        margin-left: 0px;
+    }
+    .in-div {
+        width: 250px;
+        margin-left: 0px;
+    }
+    .search-bar input {
+        widows: 200px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .favourites {
+        display: none;
+    }
+    .profile-logo {
+        margin-left: 350px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .favourites {
+        display: none;
+    }
+    .profile-logo {
+        margin-left: 20px;
+    }
+}
+
+
+/*MAIN CONTENT*/
+
+#main-content {
+    width: 70%;
+    height: auto;
+    margin-left: 60px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#coldplay-div {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(13, 13, 116, 0.246);
+}
+
+
+/*COLDPLAY IMAGE AND ITS DESCRIPTION */
+
+#coldplay-image {
+    width: 400px;
+    height: 400px;
+    background-image: url('coldplay4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+#coldplay-song-details {
+    width: 650px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#description {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#description span {
+    color: white;
+    font-family: monospace;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#description p {
+    color: white;
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+#paragraph {
+    color: white;
+    width: 100%;
+    height: 100px;
+    font-family: monospace;
+}
+
+#description-button {
+    color: white;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    display: inline-block;
+    align-items: center;
+}
+
+#description-button button {
+    color: white;
+    background: linear-gradient(to left, violet, rgba(0, 0, 255, 0.829) 100px);
+    border-style: none;
+    width: 150px;
+    height: 40px;
+    font-family: monospace;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+#description-button span {
+    color: white;
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+#track {
+    width: 200px;
+    height: 30px;
+    color: white;
+    font-family: monospace;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+/*MEDIA QUERIES OF COLD PLAY DIV*/
+
+@media screen and (max-width:1520px) {
+    #main-content {
+        width: 60%;
+    }
+    #coldplay-div {
+        justify-content: flex-start;
+    }
+    #coldplay-image {
+        width: 400px;
+        height: 400px;
+        background-size: contain;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    #coldplay-song-details {
+        width: 450px;
+        height: 300px;
+        margin-left: 0px;
+    }
+    #description {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:1450px) {
+    #main-content {}
+    #coldplay-div {
+        justify-content: flex-start;
+    }
+    #coldplay-image {
+        width: 300px;
+        height: 350px;
+        background-size: contain;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    #main-content {}
+    #coldplay-div {
+        justify-content: flex-start;
+    }
+    #coldplay-image {
+        width: 200px;
+        height: 350px;
+        background-size: contain;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    #description {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    #main-content {
+        width: 80%;
+        display: block;
+    }
+    #coldplay-div {
+        justify-content: space-between;
+        height: 300px;
+    }
+    #coldplay-image {
+        width: 200px;
+        height: 250px;
+        background-size: contain;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    #coldplay-song-details {
+        width: 300px;
+        height: 200px;
+        margin-left: 0px;
+    }
+    #description {
+        height: 200px;
+    }
+    #description span {
+        font-size: 1rem;
+    }
+    #description span p {
+        font-size: 1rem;
+    }
+    #description p {
+        font-size: 1rem;
+    }
+    #paragraph {
+        font-size: 10px;
+        height: 100px;
+    }
+    #description-button button {
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+        margin-top: 30px;
+    }
+    #track {
+        width: 100px;
+        font-size: 8.5px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #main-content {
+        width: 100%;
+        margin-left: 0px;
+    }
+    #coldplay-div {
+        justify-content: space-around;
+    }
+    #coldplay-image {
+        width: 200px;
+        height: 300px;
+        background-size: contain;
+        margin-right: 0;
+    }
+    #coldplay-song-details {
+        width: 250px;
+        height: 200px;
+        margin-left: 0px;
+    }
+    #description {
+        height: 200px;
+    }
+    #description span {
+        font-size: 1rem;
+    }
+    #description span p {
+        font-size: 1rem;
+    }
+    #description p {
+        font-size: 1rem;
+    }
+    #paragraph {
+        font-size: 10px;
+        height: 100px;
+    }
+    #description-button button {
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+        margin-top: 30px;
+    }
+    #track {
+        width: 100px;
+        font-size: 8.5px;
+    }
+    #coldplay-div {
+        height: 300px;
+    }
+}
+
+
+/*SONG LIST*/
+
+#song-list {
+    width: 100%;
+    height: 650px;
+    margin-top: 10px;
+}
+
+.play-logo {
+    display: none;
+}
+
+.fa-play {
+    color: white;
+}
+
+#song-details {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(13, 13, 116, 0.246);
+}
+
+#song-details:hover .play-logo {
+    display: block;
+}
+
+#song-image {
+    width: 70px;
+    height: 70px;
+    background-image: url('ariana.webp');
+    background-position: center;
+    background-size: contain;
+    border-radius: 5px;
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+#song-details:hover #song-image {
+    opacity: 1;
+}
+
+#song-image2 {
+    width: 70px;
+    height: 70px;
+    background-image: url('charlie.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+#song-details:hover #song-image2 {
+    opacity: 1;
+}
+
+#song-image3 {
+    width: 70px;
+    height: 70px;
+    background-image: url('taylor.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+#song-details:hover #song-image3 {
+    opacity: 1;
+}
+
+#song-details span {
+    color: white;
+    font-family: monospace;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+#duration {
+    color: white;
+    width: 50px;
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 0px;
+}
+
+.fa-heart {
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+#song-heart {
+    margin-top: 15px;
+    margin-left: 500px;
+}
+
+.fa-plus {
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+
+/*MEDIA QUERIES OF SONG LIST*/
+
+@media screen and (max-width:1520px) {
+    #song-heart {
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    #song-heart {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    #song-heart {
+        margin-left: 10px;
+    }
+    #duration {
+        margin-left: 10px;
+    }
+    .fa-plus {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #song-details {
+        width: 100%;
+    }
+    #song-image {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    #song-image2 {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    #song-image3 {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    #duration {
+        margin-left: 10px;
+    }
+    #song-heart {
+        margin-left: 30px;
+    }
+    .fa-plus {
+        margin-left: 50px;
+    }
+}
+
+
+/*ASIDE SECTION*/
+
+#aside-section {
+    width: 21%;
+    height: 800px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+/*SIMILAR PLAYLIST*/
+
+#similar-playlist {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#similar-playlist h1 {
+    font-family: monospace;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+#similar-playlist span {
+    font-family: monospace;
+    font-size: 1rem;
+    color: white;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#sp-song {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sp-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    display: flex;
+    background-image: url('charlie.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+#sp-image1 {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    display: flex;
+    background-image: url('taylor.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+#sp-image2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    display: flex;
+    background-image: url('halsey.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+#sp-song span {
+    color: white;
+    font-family: monospace;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.fa-ellipsis-h {
+    color: white;
+}
+
+#sp-list {
+    margin-left: 90px;
+    margin-top: 0;
+    color: white;
+    font-family: monospace;
+}
+
+
+/*RECENTLY PLAYED*/
+
+#recently-played {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#recently-played h1 {
+    font-family: monospace;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+#recently-played span {
+    font-family: monospace;
+    font-size: 1rem;
+    color: white;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#rp-song {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#rp-song span {
+    color: white;
+    font-family: monospace;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#rp-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    display: flex;
+    background-image: url('charlie.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+#rp-image1 {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    display: flex;
+    background-image: url('halsey.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+#rp-image2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    display: flex;
+    background-image: url('taylor.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+
+/*MEDIA QUERIES OF ASIDE SECTION*/
+
+@media screen and (max-width:1520px) {
+    #aside-section {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    #aside-section {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    #aside-section {
+        width: 40%;
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #aside-section {
+        width: 80%;
+        margin-left: 50px;
+        margin-top: 0px;
+    }
+}
+
+
+/*MUSIC FOOTER*/
+
+#music-footer {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 87%;
+    left: 0;
+    background: linear-gradient(black, rgba(241, 31, 31, 0.925), black);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#playing-song-image {
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 60px;
+    background-image: url('ariana.webp');
+    background-size: contain;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#music-footer span {
+    color: white;
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+#playing-song-heart {
+    margin: 20px;
+}
+
+
+/*PLAYING SONG CONTROLS*/
+
+#play-div {
+    width: 600px;
+    height: 85px;
+    margin-top: 10px;
+    margin-left: 110px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#suffle {
+    margin-left: 150px;
+    cursor: pointer;
+}
+
+.fa-random {
+    color: white;
+}
+
+#backward {
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.fa-step-backward {
+    color: white;
+}
+
+#play {
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.fa-pause-circle {
+    color: white;
+}
+
+.fa-step-forward {
+    color: white;
+}
+
+#forward {
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.fa-redo-alt {
+    color: white;
+    cursor: pointer;
+}
+
+#redo {
+    margin-left: 50px;
+}
+
+#time-details {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#time-bar {
+    width: 400px;
+    height: 5px;
+    margin-left: 20px;
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#time-circle-back {
+    width: 86%;
+    height: 5px;
+    background: #0dd8df;
+    border-radius: 5px;
+}
+
+#time-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0;
+}
+
+#extra-div {
+    width: 300px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+/*VOLUME CONTROLS*/
+
+#volume-div {
+    width: 60%;
+    height: 5px;
+    margin-left: 15%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#volume-back {
+    width: 50%;
+    height: 5px;
+    background-color: #0dd8df;
+    border-radius: 5px;
+}
+
+#volume-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#expand {
+    margin-left: 50px;
+}
+
+.fa-expand {
+    color: white;
+}
+
+
+/*MEDIA QUERIES OF MUSIC FOOTER*/
+
+@media screen and (max-width:1450px) {
+    #extra-div {
+        width: 200px;
+        margin-left: 0px;
+    }
+    #expand {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+    #volume-div {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    #extra-div {
+        width: 200px;
+        margin-left: 0px;
+    }
+    #expand {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+    #volume-div {
+        width: 30%;
+    }
+    #play-div {
+        width: 400px;
+        margin-left: -20px;
+    }
+    #suffle {
+        margin-left: 50px;
+    }
+    #backward {
+        margin-left: 30px;
+    }
+    #forward {
+        margin-left: 30px;
+    }
+    #redo {
+        margin-left: 30px;
+    }
+    #play {
+        margin-left: 30px;
+    }
+    #time-details {
+        width: 80%;
+        border: 1px solid white;
+        margin-left: 5px;
+    }
+    #time-details span {
+        margin-left: 0;
+        margin-right: 2px;
+    }
+    #time-bar {
+        width: 200px;
+        margin-left: 2px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    #extra-div {
+        width: 150px;
+        margin-left: -50px;
+    }
+    #volume-div {
+        width: 30%;
+    }
+    #expand {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #playing-song-image {
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    #music-footer span {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    #playing-song-heart {
+        margin: 0px;
+        display: none;
+    }
+    .fa-heart {
+        width: 0px;
+        height: 0px;
+    }
+    #play-div {
+        width: 300px;
+        margin-left: -20px;
+    }
+    #suffle {
+        margin-left: 30px;
+    }
+    #backward {
+        margin-left: 10px;
+    }
+    #forward {
+        margin-left: 10px;
+    }
+    #redo {
+        margin-left: 10px;
+    }
+    #play {
+        margin-left: 10px;
+    }
+    #time-details {
+        width: 55%;
+        border: 1px solid white;
+        margin-left: 5px;
+    }
+    #time-details span {
+        margin-left: 0;
+        margin-right: 2px;
+    }
+    #time-bar {
+        width: 100px;
+        margin-left: 2px;
+    }
+    #extra-div {
+        width: 200px;
+        margin-left: -150px;
+    }
+    #volume-div {
+        width: 30%;
+    }
+    #expand {
+        margin-left: 10px;
+    }
+}
